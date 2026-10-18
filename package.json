@@ -1,0 +1,18 @@
+{
+  "name": "jmeter-report-pdf",
+  "version": "1.0.0",
+  "description": "Convert an Apache JMeter HTML dashboard report folder into a single PDF (web UI + CLI)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "convert": "node cli.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "express": "^4.22.3",
+    "multer": "^2.4.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.43.1"
+  }
+}
